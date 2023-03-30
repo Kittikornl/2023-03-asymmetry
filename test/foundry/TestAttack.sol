@@ -30,6 +30,7 @@ contract TestAttck is Test {
   Attacker public attacker;
 
   function setUp() public {
+    console.log("block number:", block.number);
     vm.startPrank(deployer, deployer);
     // deploy safETH
     SafEth safETHImpl = new SafEth();
@@ -95,10 +96,13 @@ contract TestAttck is Test {
     attacker = new Attacker(safETH);
     vm.stopPrank();
     // rich man deposit 200 eth to safETH
-    deal(richMan, 200 * 10 ** 18);
+    uint amount = 200 * 10 ** 18;
+    deal(richMan, amount);
     vm.startPrank(richMan, richMan);
-    safETH.stake{ value: 200 * 10 ** 18 }();
+    safETH.stake{ value: amount }();
     vm.stopPrank();
+    console.log("rich man deposit amount", amount);
+    console.log("rich man share", safETH.balanceOf(richMan));
   }
 
   function testAttack() public {
