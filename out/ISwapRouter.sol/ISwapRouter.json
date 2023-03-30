@@ -1,0 +1,550 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tokenIn",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenOut",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountIn",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountOutMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint160",
+              "name": "sqrtPriceLimitX96",
+              "type": "uint160"
+            }
+          ],
+          "internalType": "struct ISwapRouter.ExactInputSingleParams",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "exactInputSingle",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": "04e45aaf"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenIn\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenOut\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountIn\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountOutMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint160\",\"name\":\"sqrtPriceLimitX96\",\"type\":\"uint160\"}],\"internalType\":\"struct ISwapRouter.ExactInputSingleParams\",\"name\":\"params\",\"type\":\"tuple\"}],\"name\":\"exactInputSingle\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amountOut\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"params\":{\"params\":\"The parameters necessary for the swap, encoded as ExactInputSingleParams in calldata\"},\"returns\":{\"amountOut\":\"The amount of the received token\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))\":{\"notice\":\"Swaps amountIn of one token for as much as possible of another token\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/uniswap/ISwapRouter.sol\":\"ISwapRouter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@eth-optimism/=node_modules/@eth-optimism/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=node_modules/hardhat-deploy/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/uniswap/ISwapRouter.sol\":{\"keccak256\":\"0x018b44d3879fe94262060590cf654614a54663159d78553046c0a286eb09dd50\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa17dbaa191aaf54b42e4f1deac49f24ed217bb867e20d794f5af26ef3cb2c31\",\"dweb:/ipfs/QmTgMtvRe1HzqQMPC3M1So92EvLp2es3oL9Fp1iqquDS2G\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct ISwapRouter.ExactInputSingleParams",
+              "name": "params",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "tokenIn",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "tokenOut",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "fee",
+                  "type": "uint24"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountIn",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountOutMinimum",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint160",
+                  "name": "sqrtPriceLimitX96",
+                  "type": "uint160"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "exactInputSingle",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountOut",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "params": {
+              "params": "The parameters necessary for the swap, encoded as ExactInputSingleParams in calldata"
+            },
+            "returns": {
+              "amountOut": "The amount of the received token"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "exactInputSingle((address,address,uint24,address,uint256,uint256,uint160))": {
+            "notice": "Swaps amountIn of one token for as much as possible of another token"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@eth-optimism/=node_modules/@eth-optimism/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":ds-test/=lib/ds-test/src/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=node_modules/hardhat-deploy/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/uniswap/ISwapRouter.sol": "ISwapRouter"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/uniswap/ISwapRouter.sol": {
+        "keccak256": "0x018b44d3879fe94262060590cf654614a54663159d78553046c0a286eb09dd50",
+        "urls": [
+          "bzz-raw://aa17dbaa191aaf54b42e4f1deac49f24ed217bb867e20d794f5af26ef3cb2c31",
+          "dweb:/ipfs/QmTgMtvRe1HzqQMPC3M1So92EvLp2es3oL9Fp1iqquDS2G"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/uniswap/ISwapRouter.sol",
+    "id": 2590,
+    "exportedSymbols": {
+      "ISwapRouter": [
+        2589
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:660:18",
+    "nodes": [
+      {
+        "id": 2564,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:18",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 2589,
+        "nodeType": "ContractDefinition",
+        "src": "58:633:18",
+        "nodes": [
+          {
+            "id": 2579,
+            "nodeType": "StructDefinition",
+            "src": "86:224:18",
+            "nodes": [],
+            "canonicalName": "ISwapRouter.ExactInputSingleParams",
+            "members": [
+              {
+                "constant": false,
+                "id": 2566,
+                "mutability": "mutable",
+                "name": "tokenIn",
+                "nameLocation": "134:7:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "126:15:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2565,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "126:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2568,
+                "mutability": "mutable",
+                "name": "tokenOut",
+                "nameLocation": "159:8:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "151:16:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2567,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2570,
+                "mutability": "mutable",
+                "name": "fee",
+                "nameLocation": "184:3:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "177:10:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint24",
+                  "typeString": "uint24"
+                },
+                "typeName": {
+                  "id": 2569,
+                  "name": "uint24",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:6:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2572,
+                "mutability": "mutable",
+                "name": "recipient",
+                "nameLocation": "205:9:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "197:17:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2571,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "197:7:18",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2574,
+                "mutability": "mutable",
+                "name": "amountIn",
+                "nameLocation": "229:8:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "224:13:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2573,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "224:4:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2576,
+                "mutability": "mutable",
+                "name": "amountOutMinimum",
+                "nameLocation": "252:16:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "247:21:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2575,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "247:4:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2578,
+                "mutability": "mutable",
+                "name": "sqrtPriceLimitX96",
+                "nameLocation": "286:17:18",
+                "nodeType": "VariableDeclaration",
+                "scope": 2579,
+                "src": "278:25:18",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint160",
+                  "typeString": "uint160"
+                },
+                "typeName": {
+                  "id": 2577,
+                  "name": "uint160",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "278:7:18",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ExactInputSingleParams",
+            "nameLocation": "93:22:18",
+            "scope": 2589,
+            "visibility": "public"
+          },
+          {
+            "id": 2588,
+            "nodeType": "FunctionDefinition",
+            "src": "567:122:18",
+            "nodes": [],
+            "documentation": {
+              "id": 2580,
+              "nodeType": "StructuredDocumentation",
+              "src": "316:246:18",
+              "text": "@notice Swaps amountIn of one token for as much as possible of another token\n @param params The parameters necessary for the swap, encoded as ExactInputSingleParams in calldata\n @return amountOut The amount of the received token"
+            },
+            "functionSelector": "04e45aaf",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exactInputSingle",
+            "nameLocation": "576:16:18",
+            "parameters": {
+              "id": 2584,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2583,
+                  "mutability": "mutable",
+                  "name": "params",
+                  "nameLocation": "634:6:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2588,
+                  "src": "602:38:18",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_ExactInputSingleParams_$2579_calldata_ptr",
+                    "typeString": "struct ISwapRouter.ExactInputSingleParams"
+                  },
+                  "typeName": {
+                    "id": 2582,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2581,
+                      "name": "ExactInputSingleParams",
+                      "nameLocations": [
+                        "602:22:18"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2579,
+                      "src": "602:22:18"
+                    },
+                    "referencedDeclaration": 2579,
+                    "src": "602:22:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ExactInputSingleParams_$2579_storage_ptr",
+                      "typeString": "struct ISwapRouter.ExactInputSingleParams"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "592:54:18"
+            },
+            "returnParameters": {
+              "id": 2587,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2586,
+                  "mutability": "mutable",
+                  "name": "amountOut",
+                  "nameLocation": "678:9:18",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2588,
+                  "src": "673:14:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2585,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "673:4:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "672:16:18"
+            },
+            "scope": 2589,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISwapRouter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2589
+        ],
+        "name": "ISwapRouter",
+        "nameLocation": "68:11:18",
+        "scope": 2590,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 18
+}

@@ -1,0 +1,710 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ethPerDerivative",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "slippage",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMaxSlippage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "balance()": "b69ef8a8",
+    "deposit()": "d0e30db0",
+    "ethPerDerivative(uint256)": "2bd6de1d",
+    "name()": "06fdde03",
+    "setMaxSlippage(uint256)": "43f68a49",
+    "withdraw(uint256)": "2e1a7d4d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"balance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"ethPerDerivative\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"slippage\",\"type\":\"uint256\"}],\"name\":\"setMaxSlippage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balance()\":{\"notice\":\"underlying derivative balance held by this contract\"},\"deposit()\":{\"notice\":\"buys the underlying derivative for this contract\"},\"ethPerDerivative(uint256)\":{\"notice\":\"Estimated price per derivative when depositing amount\"},\"name()\":{\"notice\":\"Returns human readable identifier string\"},\"setMaxSlippage(uint256)\":{\"notice\":\"Maximum acceptable slippage when buying/selling underlying derivative\"},\"withdraw(uint256)\":{\"notice\":\"sells the underlying derivative for this contract & sends user eth\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IDerivative.sol\":\"IDerivative\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@eth-optimism/=node_modules/@eth-optimism/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=node_modules/hardhat-deploy/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IDerivative.sol\":{\"keccak256\":\"0xcfa2187b4cafd1abe033c6e7caee4afe3af5af36ee736133985e13910453ee1e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3c09edb3b6e102c014dd9a520dba79ad6a7b3c2d8c6d0afa497c40eb1cf8a4ba\",\"dweb:/ipfs/QmSqzyN6iUKi15FqZCTKh8JsAXtWtKgqKAtHqVvQxtJT4D\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "balance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "deposit",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ethPerDerivative",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "name",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "slippage",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setMaxSlippage"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "balance()": {
+            "notice": "underlying derivative balance held by this contract"
+          },
+          "deposit()": {
+            "notice": "buys the underlying derivative for this contract"
+          },
+          "ethPerDerivative(uint256)": {
+            "notice": "Estimated price per derivative when depositing amount"
+          },
+          "name()": {
+            "notice": "Returns human readable identifier string"
+          },
+          "setMaxSlippage(uint256)": {
+            "notice": "Maximum acceptable slippage when buying/selling underlying derivative"
+          },
+          "withdraw(uint256)": {
+            "notice": "sells the underlying derivative for this contract & sends user eth"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@eth-optimism/=node_modules/@eth-optimism/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":ds-test/=lib/ds-test/src/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=node_modules/hardhat-deploy/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IDerivative.sol": "IDerivative"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IDerivative.sol": {
+        "keccak256": "0xcfa2187b4cafd1abe033c6e7caee4afe3af5af36ee736133985e13910453ee1e",
+        "urls": [
+          "bzz-raw://3c09edb3b6e102c014dd9a520dba79ad6a7b3c2d8c6d0afa497c40eb1cf8a4ba",
+          "dweb:/ipfs/QmSqzyN6iUKi15FqZCTKh8JsAXtWtKgqKAtHqVvQxtJT4D"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IDerivative.sol",
+    "id": 2105,
+    "exportedSymbols": {
+      "IDerivative": [
+        2104
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:795:6",
+    "nodes": [
+      {
+        "id": 2065,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:6",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 2104,
+        "nodeType": "ContractDefinition",
+        "src": "58:768:6",
+        "nodes": [
+          {
+            "id": 2071,
+            "nodeType": "FunctionDefinition",
+            "src": "135:54:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2066,
+              "nodeType": "StructuredDocumentation",
+              "src": "86:44:6",
+              "text": "Returns human readable identifier string"
+            },
+            "functionSelector": "06fdde03",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "name",
+            "nameLocation": "144:4:6",
+            "parameters": {
+              "id": 2067,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "148:2:6"
+            },
+            "returnParameters": {
+              "id": 2070,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2069,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2071,
+                  "src": "174:13:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2068,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "174:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "173:15:6"
+            },
+            "scope": 2104,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2077,
+            "nodeType": "FunctionDefinition",
+            "src": "252:54:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2072,
+              "nodeType": "StructuredDocumentation",
+              "src": "195:52:6",
+              "text": "buys the underlying derivative for this contract"
+            },
+            "functionSelector": "d0e30db0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "261:7:6",
+            "parameters": {
+              "id": 2073,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "268:2:6"
+            },
+            "returnParameters": {
+              "id": 2076,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2075,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2077,
+                  "src": "297:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2074,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "297:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "296:9:6"
+            },
+            "scope": 2104,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2083,
+            "nodeType": "FunctionDefinition",
+            "src": "387:43:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2078,
+              "nodeType": "StructuredDocumentation",
+              "src": "312:70:6",
+              "text": "sells the underlying derivative for this contract & sends user eth"
+            },
+            "functionSelector": "2e1a7d4d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "396:8:6",
+            "parameters": {
+              "id": 2081,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2080,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "413:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2083,
+                  "src": "405:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2079,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "404:16:6"
+            },
+            "returnParameters": {
+              "id": 2082,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "429:0:6"
+            },
+            "scope": 2104,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2091,
+            "nodeType": "FunctionDefinition",
+            "src": "498:74:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2084,
+              "nodeType": "StructuredDocumentation",
+              "src": "436:57:6",
+              "text": "Estimated price per derivative when depositing amount"
+            },
+            "functionSelector": "2bd6de1d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ethPerDerivative",
+            "nameLocation": "507:16:6",
+            "parameters": {
+              "id": 2087,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2086,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "532:6:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2091,
+                  "src": "524:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2085,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "524:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "523:16:6"
+            },
+            "returnParameters": {
+              "id": 2090,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2089,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2091,
+                  "src": "563:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2088,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "563:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "562:9:6"
+            },
+            "scope": 2104,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2097,
+            "nodeType": "FunctionDefinition",
+            "src": "638:51:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2092,
+              "nodeType": "StructuredDocumentation",
+              "src": "578:55:6",
+              "text": "underlying derivative balance held by this contract"
+            },
+            "functionSelector": "b69ef8a8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "balance",
+            "nameLocation": "647:7:6",
+            "parameters": {
+              "id": 2093,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "654:2:6"
+            },
+            "returnParameters": {
+              "id": 2096,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2095,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2097,
+                  "src": "680:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2094,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "680:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "679:9:6"
+            },
+            "scope": 2104,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2103,
+            "nodeType": "FunctionDefinition",
+            "src": "773:51:6",
+            "nodes": [],
+            "documentation": {
+              "id": 2098,
+              "nodeType": "StructuredDocumentation",
+              "src": "695:73:6",
+              "text": "Maximum acceptable slippage when buying/selling underlying derivative"
+            },
+            "functionSelector": "43f68a49",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMaxSlippage",
+            "nameLocation": "782:14:6",
+            "parameters": {
+              "id": 2101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2100,
+                  "mutability": "mutable",
+                  "name": "slippage",
+                  "nameLocation": "805:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2103,
+                  "src": "797:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2099,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "797:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "796:18:6"
+            },
+            "returnParameters": {
+              "id": 2102,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "823:0:6"
+            },
+            "scope": 2104,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDerivative",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2104
+        ],
+        "name": "IDerivative",
+        "nameLocation": "68:11:6",
+        "scope": 2105,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 6
+}

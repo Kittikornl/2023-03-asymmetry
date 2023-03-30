@@ -1,0 +1,577 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "assignDeposits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getExcessBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "recycleDissolvedDeposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "recycleExcessCollateral",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "recycleLiquidatedStake",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawExcessBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "assignDeposits()": "27c8f193",
+    "deposit()": "d0e30db0",
+    "getBalance()": "12065fe0",
+    "getExcessBalance()": "888b042f",
+    "recycleDissolvedDeposit()": "72f5158d",
+    "recycleExcessCollateral()": "db82047b",
+    "recycleLiquidatedStake()": "1b7dd4c0",
+    "withdrawExcessBalance(uint256)": "63a5db9e"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"assignDeposits\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getExcessBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"recycleDissolvedDeposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"recycleExcessCollateral\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"recycleLiquidatedStake\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawExcessBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/rocketpool/RocketDepositPoolInterface.sol\":\"RocketDepositPoolInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@eth-optimism/=node_modules/@eth-optimism/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=node_modules/hardhat-deploy/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/rocketpool/RocketDepositPoolInterface.sol\":{\"keccak256\":\"0xb2458612769f1f9cb6318fd4258020b08308d93d2929ce617381228d9fe1a1fe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91d720cf135ffd5fd66c6d7f9db43132eb1239c933de64d3b9cb77af2e6adfad\",\"dweb:/ipfs/QmayWWGHHob2pwauob7NaxzskvvMNz8FEH9q7wCRa8FAtN\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "assignDeposits"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "deposit"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getBalance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getExcessBalance",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "recycleDissolvedDeposit"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "recycleExcessCollateral"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "recycleLiquidatedStake"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdrawExcessBalance"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@eth-optimism/=node_modules/@eth-optimism/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":ds-test/=lib/ds-test/src/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=node_modules/hardhat-deploy/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/rocketpool/RocketDepositPoolInterface.sol": "RocketDepositPoolInterface"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/rocketpool/RocketDepositPoolInterface.sol": {
+        "keccak256": "0xb2458612769f1f9cb6318fd4258020b08308d93d2929ce617381228d9fe1a1fe",
+        "urls": [
+          "bzz-raw://91d720cf135ffd5fd66c6d7f9db43132eb1239c933de64d3b9cb77af2e6adfad",
+          "dweb:/ipfs/QmayWWGHHob2pwauob7NaxzskvvMNz8FEH9q7wCRa8FAtN"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/rocketpool/RocketDepositPoolInterface.sol",
+    "id": 2314,
+    "exportedSymbols": {
+      "RocketDepositPoolInterface": [
+        2313
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:511:15",
+    "nodes": [
+      {
+        "id": 2282,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:15",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 2313,
+        "nodeType": "ContractDefinition",
+        "src": "58:484:15",
+        "nodes": [
+          {
+            "id": 2287,
+            "nodeType": "FunctionDefinition",
+            "src": "101:54:15",
+            "nodes": [],
+            "functionSelector": "12065fe0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBalance",
+            "nameLocation": "110:10:15",
+            "parameters": {
+              "id": 2283,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "120:2:15"
+            },
+            "returnParameters": {
+              "id": 2286,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2285,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2287,
+                  "src": "146:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2284,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:9:15"
+            },
+            "scope": 2313,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2292,
+            "nodeType": "FunctionDefinition",
+            "src": "161:60:15",
+            "nodes": [],
+            "functionSelector": "888b042f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getExcessBalance",
+            "nameLocation": "170:16:15",
+            "parameters": {
+              "id": 2288,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "186:2:15"
+            },
+            "returnParameters": {
+              "id": 2291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2290,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2292,
+                  "src": "212:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2289,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:9:15"
+            },
+            "scope": 2313,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2295,
+            "nodeType": "FunctionDefinition",
+            "src": "227:36:15",
+            "nodes": [],
+            "functionSelector": "d0e30db0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "236:7:15",
+            "parameters": {
+              "id": 2293,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "243:2:15"
+            },
+            "returnParameters": {
+              "id": 2294,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "262:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2298,
+            "nodeType": "FunctionDefinition",
+            "src": "269:52:15",
+            "nodes": [],
+            "functionSelector": "72f5158d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recycleDissolvedDeposit",
+            "nameLocation": "278:23:15",
+            "parameters": {
+              "id": 2296,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "301:2:15"
+            },
+            "returnParameters": {
+              "id": 2297,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "320:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2301,
+            "nodeType": "FunctionDefinition",
+            "src": "327:52:15",
+            "nodes": [],
+            "functionSelector": "db82047b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recycleExcessCollateral",
+            "nameLocation": "336:23:15",
+            "parameters": {
+              "id": 2299,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "359:2:15"
+            },
+            "returnParameters": {
+              "id": 2300,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2304,
+            "nodeType": "FunctionDefinition",
+            "src": "385:51:15",
+            "nodes": [],
+            "functionSelector": "1b7dd4c0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recycleLiquidatedStake",
+            "nameLocation": "394:22:15",
+            "parameters": {
+              "id": 2302,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "416:2:15"
+            },
+            "returnParameters": {
+              "id": 2303,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "435:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2307,
+            "nodeType": "FunctionDefinition",
+            "src": "442:35:15",
+            "nodes": [],
+            "functionSelector": "27c8f193",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "assignDeposits",
+            "nameLocation": "451:14:15",
+            "parameters": {
+              "id": 2305,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "465:2:15"
+            },
+            "returnParameters": {
+              "id": 2306,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "476:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 2312,
+            "nodeType": "FunctionDefinition",
+            "src": "483:57:15",
+            "nodes": [],
+            "functionSelector": "63a5db9e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawExcessBalance",
+            "nameLocation": "492:21:15",
+            "parameters": {
+              "id": 2310,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2309,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "522:7:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2312,
+                  "src": "514:15:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2308,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "514:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "513:17:15"
+            },
+            "returnParameters": {
+              "id": 2311,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "539:0:15"
+            },
+            "scope": 2313,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RocketDepositPoolInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2313
+        ],
+        "name": "RocketDepositPoolInterface",
+        "nameLocation": "68:26:15",
+        "scope": 2314,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 15
+}
